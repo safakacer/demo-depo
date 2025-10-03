@@ -1,0 +1,22 @@
+/* Arkaplan ve normal imleci gizle */
+body{
+  margin: 0;
+  height: 100vh;
+  background: #070707;
+  cursor: none;
+}
+
+/* Bayrak imleç konteyneri */
+#flag-cursor{
+  position: fixed;
+  top: 0; left: 0;
+  width: 42px; height: 28px;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  z-index: 1000;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.25));
+}
+
+/* Eski cursor sınıfları artık kullanılmıyor, istersen silebilirsin
+.cursor-dot, .cursor-border {...}
+*/

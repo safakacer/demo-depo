@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse efect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="flag-cursor" aria-hidden="true">
+    <svg width="42" height="28" viewBox="0 0 42 28">
+      <!-- Kırmızı zemin -->
+      <rect x="0" y="0" width="42" height="28" rx="4" fill="#E30A17"/>
+      <!-- Hilal (sol beyaz daire + sağa kaydırılmış kırmızı daire ile oyma tekniği) -->
+      <circle cx="16" cy="14" r="9" fill="white"/>
+      <circle cx="19" cy="14" r="9" fill="#E30A17"/>
+      <!-- Yıldız -->
+      <polygon fill="white"
+        points="
+          24.5,9.2 25.6,12.1 28.8,12.1
+          26.2,13.9 27.3,16.8
+          24.5,15.0 21.7,16.8
+          22.8,13.9 20.2,12.1
+          23.4,12.1
+        " />
+    </svg>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
